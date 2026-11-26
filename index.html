@@ -1,0 +1,374 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title data-t="title.home">جس — الفن يتجاوز حدود النظر</title>
+<meta name="description" content="جس: معرض رقمي غامر يقدّم الفن للمكفوفين وضعاف البصر عبر اللمس والصوت والحركة وبرايل.">
+<meta name="theme-color" content="#050403">
+<link rel="icon" href="img/logo-cream.png">
+<link rel="preload" href="fonts/tajawal-700-arabic.woff2" as="font" type="font/woff2" crossorigin>
+<style>.pending body{visibility:hidden}</style>
+<script>(function(h){function s(k){try{return localStorage.getItem('jass-'+k)}catch(e){return null}}h.classList.add('js');var q=new URLSearchParams(location.search).get('lang'),l=q==='en'||q==='ar'?q:(s('lang')||'ar');h.lang=l;h.dir=l==='ar'?'rtl':'ltr';h.dataset.motion=s('motion')||(matchMedia('(prefers-reduced-motion: reduce)').matches?'off':'on');h.dataset.contrast=s('contrast')||'normal';h.dataset.text=s('text')||'0';if(l==='en')h.classList.add('pending');try{if(sessionStorage.getItem('jass-nav')&&h.dataset.motion!=='off')h.classList.add('arrive');sessionStorage.removeItem('jass-nav')}catch(e){}})(document.documentElement)</script>
+<link rel="stylesheet" href="css/jass.css">
+</head>
+<body>
+<div class="veil" aria-hidden="true"><i></i><i></i></div>
+<a class="skip" href="#main" data-t="skip">انتقل إلى المعرض</a>
+
+<header class="hdr">
+  <a class="hdr-logo" href="#see" data-ta="aria-label:logo" aria-label="جس — الصفحة الرئيسية"><img class="keep" src="img/logo-cream.png" alt="" width="900" height="343"></a>
+  <nav class="nav" id="nav" data-ta="aria-label:n.main" aria-label="التنقل الرئيسي">
+    <a href="#see" data-t="n.home">الصفحة الرئيسية</a>
+    <a href="#about" data-t="n.about">من نحن</a>
+    <a href="#technologies" data-t="n.tech">تقنياتنا</a>
+    <a href="#stories" data-t="n.blog">المدونة</a>
+    <a href="#register" data-t="n.contact">التواصل</a>
+    <a href="volunteer.html" data-t="n.vol">التطوع</a>
+  </nav>
+  <div class="hdr-tools">
+    <button class="lang" type="button">English</button>
+    <button class="menu-btn" type="button" aria-controls="nav" aria-expanded="false" data-ta="aria-label:n.menu" aria-label="القائمة"><span></span></button>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 01 SEE: the doors open onto a 3D tactile field, and the studio introduces itself over it -->
+<section class="hero pin" id="see" data-station="see" data-station-ar="أبصر">
+  <div class="pin-stage t-ink">
+    <canvas class="field" aria-hidden="true"></canvas>
+    <img class="field-fb keep" src="img/logo-cream.png" alt="" width="900" height="343">
+    <div class="hero-fade"></div>
+    <div class="door door-a" aria-hidden="true"><span class="door-handle"></span></div>
+    <div class="door door-b" aria-hidden="true"><span class="door-handle"></span></div>
+    <canvas class="hero-dots" aria-hidden="true"></canvas>
+    <div class="hero-copy">
+      <div class="hero-head">
+        <h1><span data-t="hero.h1">نفتح للفن</span><span data-t="hero.h2">أبوابًا أخرى</span></h1>
+        <p class="hero-tag" lang="en"><span>WE OPEN NEW</span><span>DOORS TO ART</span></p>
+      </div>
+      <div class="hero-foot">
+        <p class="hero-studio" lang="en">JASS<br>STUDIO</p>
+        <span class="hero-line"><i></i></span>
+        <p class="hero-cue"><span data-t="hero.cue">مرّر للدخول</span><i aria-hidden="true"></i></p>
+      </div>
+    </div>
+  </div>
+  <div class="hero-spacer" aria-hidden="true"></div>
+  <div class="hero-about" id="about" data-station="explore" data-station-ar="استكشف" role="region" aria-labelledby="ab-h">
+    <div class="wrap">
+      <h2 id="ab-h" class="about-title words" data-t="ab.h">عن الاستديو</h2>
+      <p class="lead" data-reveal data-t="ab.lead">استديو جس نؤمن بأن الإبداع الفني لا ينبغي أن يحده البصر</p>
+      <p class="measure" data-reveal data-t="ab.p">من خلال تمكين المكفوفين من خوض تجارب حسية غامرة عبر تحويل الفنون إلى إبداعات تُحس وتُلمس، نسعى من خلال دمج التقنيات اللمسية والصوتية إلى إعادة صياغة اللوحات الفنية بطرق تخدم ذوي الإعاقة البصرية.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--ink);--to:var(--cream)" aria-hidden="true"></svg>
+
+<!-- Story: a painting that starts invisible and separates into tactile layers -->
+<section class="room t-cream" id="story" aria-labelledby="story-h">
+  <div class="wrap grid story">
+    <div class="strata" aria-hidden="true">
+      <div class="strata-in">
+        <svg class="lay" style="--z:0" viewBox="0 0 400 500"><rect width="400" height="500" fill="#0044e5"/></svg>
+        <svg class="lay" style="--z:1" viewBox="0 0 400 500"><circle cx="268" cy="150" r="74" fill="#efff50"/></svg>
+        <svg class="lay" style="--z:2" viewBox="0 0 400 500"><path fill="#934635" d="M0 318C70 268 138 262 214 304s124 34 186-12v208H0z"/></svg>
+        <svg class="lay" style="--z:3" viewBox="0 0 400 500"><path fill="#050403" d="M0 402c64-46 134-54 204-20s132 26 196-16v134H0z"/></svg>
+        <svg class="lay" style="--z:4" viewBox="0 0 400 500"><g fill="#f3eee4"><circle cx="64" cy="66" r="9"/><circle cx="64" cy="96" r="9"/><circle cx="94" cy="96" r="9"/><circle cx="64" cy="126" r="9"/><circle cx="140" cy="66" r="9"/><circle cx="170" cy="66" r="9"/><circle cx="170" cy="96" r="9"/><circle cx="140" cy="126" r="9"/><circle cx="104" cy="438" r="9"/><circle cx="134" cy="438" r="9"/><circle cx="104" cy="468" r="9"/><circle cx="196" cy="438" r="9"/><circle cx="226" cy="468" r="9"/><circle cx="288" cy="438" r="9"/><circle cx="318" cy="438" r="9"/><circle cx="318" cy="468" r="9"/></g></svg>
+      </div>
+    </div>
+    <div class="story-copy">
+      <h2 id="story-h" class="h3 words" data-t="story.h" style="font-size:clamp(2rem,1.4rem + 2.6vw,4rem);margin-block-end:1.5rem">قصتنا وكيف بدأنا</h2>
+      <p data-reveal><span data-t="story.p1a">بدأت الحكاية من لحظة سفر وتأمل لواقع شخص كفيف حيث اتضحت مشكلة نغفل عنها كمصممين، وهي اللوحات والأعمال الفنية تظل </span><span class="invisible-word" data-t="story.inv">"غير مرئية"</span><span data-t="story.p1b"> ومحجوبة عن ذوي الإعاقة البصرية.</span></p>
+      <p data-reveal data-t="story.p2">وانطلقت الفكرة لتتحول إلى رؤية جماعية وفريق عمل يسعى لتوظيف التصميم الجرافيكي والتقنية كوسيلة جسر وتمكين تقرّب الفن للكفيف، ونقل اللوحات الفنية من حدود النظر إلى آفاق الإدراك الحسي، لتكون منصة “جس” أداة تفتح أبواب الفن للجميع بلا استثناء.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--cream);--to:var(--ink)" aria-hidden="true"></svg>
+
+<!-- Technologies index -->
+<section class="room t-ink" id="technologies" aria-labelledby="tc-h" style="padding-block-start:clamp(3rem,6vw,5rem)">
+  <div class="wrap">
+    <div class="grid">
+      <p class="eyebrow" style="grid-column:1/-1;margin-block-end:1rem" data-t="tc.eye">أربعة أبواب</p>
+      <h2 id="tc-h" class="h2 tech-head words" data-t="tc.h">ما هي التقنيات المستخدمة؟</h2>
+      <p class="tech-p lead" data-reveal data-t="tc.p">نؤمن أن الفن يمكن أن يُكتشف بأكثر من حاسة، لذلك طوّرنا مجموعة من التقنيات التفاعلية التي تتيح للكفيف التفاعل مع الأعمال الفنية وفهم تفاصيلها بطرق مختلفة.</p>
+    </div>
+    <ul class="doors4">
+      <li data-reveal style="--i:0"><a href="#touch"><span class="n">٠١</span><span><strong data-t="tc.1">الرسومات اللمسية</strong><small data-t="tc.1s">المس</small></span></a></li>
+      <li data-reveal style="--i:1"><a href="#listen"><span class="n">٠٢</span><span><strong data-t="tc.2">الصوت المدمج</strong><small data-t="tc.2s">أنصت</small></span></a></li>
+      <li data-reveal style="--i:2"><a href="#feel"><span class="n">٠٣</span><span><strong data-t="tc.3">الموشن جرافيك</strong><small data-t="tc.3s">اشعر</small></span></a></li>
+      <li data-reveal style="--i:3"><a href="#understand"><span class="n">٠٤</span><span><strong data-t="tc.4">برايل</strong><small data-t="tc.4s">افهم</small></span></a></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--ink);--to:var(--brown)" aria-hidden="true"></svg>
+
+<!-- 03 TOUCH -->
+<section class="room t-brown" id="touch" data-station="touch" data-station-ar="المس" aria-labelledby="to-h">
+  <div class="wrap">
+    <div class="grid touch-grid">
+      <div class="touch-copy">
+        <p class="sense-tag"><b class="words" data-t="to.big">المس</b></p>
+        <p class="eyebrow" data-t="to.eye" style="margin-block-end:.75rem">الرسومات اللمسية</p>
+        <h3 id="to-h" class="h3" data-reveal data-t="to.h">اللمس | استكشاف الفن باليد</h3>
+        <p class="measure" data-reveal data-t="to.p">نحوّل تفاصيل اللوحة من عناصر بصرية إلى أشكال بارزة يمكن استكشافها باللمس. تساعد هذه التقنية الكفيف على تكوين تصور عن العمل الفني وفهم عناصره وتكويناته من خلال حاسة اللمس، ليصبح الفن تجربة يمكن اكتشافها باليد.</p>
+      </div>
+      <div class="touch-stage">
+        <div class="relief" tabindex="0" role="group" data-ta="aria-label:to.canvas" aria-label="عمل بارز لأمواج وقمر مرسوم بالنقاط. حرّك المؤشر أو إصبعك أو مفاتيح الأسهم فوقه لتكشفه. هناك ثلاثة أشياء لتجدها: قمر أعلى اليمين، وخطوط ريح أعلى اليسار، وكثبان في الأسفل.">
+          <canvas aria-hidden="true"></canvas>
+          <span class="finger" aria-hidden="true"></span>
+          <p class="hint" aria-hidden="true" data-t="to.hint">حرّك يدك فوق العتمة</p>
+        </div>
+        <p id="relief-live" class="sr" aria-live="polite"></p>
+        <div class="touch-tools">
+          <p data-t="to.keys">لوحة المفاتيح: انتقل إلى العمل ثم استخدم مفاتيح الأسهم.</p>
+          <button class="btn ghost reveal-all" type="button"><span class="pip"></span><span data-t="to.reveal">اكشف العمل كاملًا</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--brown);--to:var(--blue)" aria-hidden="true"></svg>
+
+<!-- 04 LISTEN -->
+<section class="room listen t-blue" id="listen" data-station="listen" data-station-ar="أنصت" aria-labelledby="li-h">
+  <div class="wrap">
+    <div class="grid listen-grid">
+      <div class="listen-copy">
+        <p class="sense-tag"><b class="words" data-t="li.big">أنصت</b></p>
+        <p class="eyebrow" data-t="li.eye" style="margin-block-end:.75rem">الصوت المدمج</p>
+        <h3 id="li-h" class="h3" data-reveal data-t="li.h">اسمع ما تحمله اللوحة</h3>
+        <p class="mt-s measure" data-reveal data-t="li.p">تجارب صوتية مدمجة في العمل الفني تضيف السياق والحكاية والمشاعر والمؤثرات الصوتية، لتساعد الزائر على بناء صورة ذهنية وعلاقة أعمق مع العمل.</p>
+      </div>
+    </div>
+    <canvas class="wave" aria-hidden="true"></canvas>
+    <div class="layers" role="group" data-ta="aria-label:li.group" aria-label="الطبقات الصوتية للوحة">
+      <button class="layer" type="button" data-layer="water" data-src="audio/water.m4a" aria-pressed="false"><b data-t="li.1">الماء</b><span class="st"></span></button>
+      <button class="layer" type="button" data-layer="wind" data-src="audio/wind.m4a" aria-pressed="false"><b data-t="li.2">الرياح</b><span class="st"></span></button>
+      <button class="layer" type="button" data-layer="light" data-src="audio/birds.m4a" aria-pressed="false"><b data-t="li.3">تغريد</b><span class="st"></span></button>
+      <button class="layer" type="button" data-layer="pulse" aria-pressed="false"><b data-t="li.4">نبض قلب</b><span class="st"></span></button>
+    </div>
+    <p class="listen-now" aria-live="polite"></p>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--blue);--to:var(--ink)" aria-hidden="true"></svg>
+
+<!-- 05 MOTION GRAPHICS -->
+<section class="feel pin t-ink" id="feel" data-station="feel" data-station-ar="موشن جرافيك" aria-labelledby="fe-h">
+  <div class="pin-stage">
+    <div class="feel-copy">
+      <h2 id="fe-h" class="room-title words" data-t="fe.big">موشن جرافيك</h2>
+      <h3 class="h3" style="font-size:clamp(1.3rem,1.1rem + .9vw,2rem)" data-t="fe.h">الموشن جرافيك والصوت | تجربة بصرية وسمعية</h3>
+      <p class="body" data-t="fe.p">نحوّل العمل الفني إلى تجربة متحركة وسمعية مصممة لتناسب ضعاف البصر والمكفوفين. من خلال الحركة، التباين، والمؤثرات الصوتية، نبرز تفاصيل اللوحة ونحوّل عناصرها ومشاعرها إلى أصوات وحركات تساعد على فهمها وتخيّلها. لتصبح اللوحة تجربة تُكتشف بالنظر أو السمع، وليس بالنظر وحده.</p>
+      <ol class="stages">
+        <li><b data-t="fe.1">الحركة</b><span data-t="fe.1s">تقود العين عبر العمل</span></li>
+        <li><b data-t="fe.2">الحجم</b><span data-t="fe.2s">يقرّب التفاصيل</span></li>
+        <li><b data-t="fe.3">التباين</b><span data-t="fe.3s">يوضّح الحواف</span></li>
+        <li><b data-t="fe.4">الانتقال</b><span data-t="fe.4s">يربط مشهدًا بآخر</span></li>
+      </ol>
+    </div>
+    <figure class="lens">
+      <canvas role="img" data-ta="aria-label:fe.art" aria-label="لوحة متحركة مرسومة بضربات فرشاة: سماء زرقاء تدور فيها رياح حلزونية ونجوم صفراء وقمر، وشجرة سرو داكنة، وتلال وقرية هادئة في الأسفل."></canvas>
+      <figcaption class="lens-bar"><span data-t="fe.cap">اقتراح: إعادة تخيّل متحركة للوحة «ليلة النجوم» لفان جوخ (١٨٨٩)</span><button class="lens-toggle" type="button"></button></figcaption>
+    </figure>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--ink);--to:var(--yellow)" aria-hidden="true"></svg>
+
+<!-- 06 BRAILLE -->
+<section class="room t-yellow" id="understand" data-station="understand" data-station-ar="برايل" aria-labelledby="br-h">
+  <div class="wrap grid br-grid">
+    <div class="br-copy">
+      <h2 id="br-h" class="room-title words" data-t="br.big">برايل</h2>
+      <h3 class="h3" data-reveal data-t="br.h">برايل | قراءة قصة العمل</h3>
+      <p class="measure" data-reveal data-t="br.p">نستخدم لغة برايل لتقديم المعلومات المرتبطة بالعمل الفني، من وصف اللوحة إلى قصتها وسياقها الفني. تتيح هذه التقنية للكفيف الوصول إلى محتوى العمل وقراءته بشكل مستقل، وربط التفاصيل التي يستكشفها باللمس بالمعلومات التي تحكي قصة اللوحة.</p>
+    </div>
+    <div class="br-show">
+      <div class="cells" id="br-cells"></div>
+      <p class="br-pick" id="br-pick" data-t="br.pick">اختر كلمة لتتحول إلى برايل</p>
+      <div class="chips" id="br-chips" role="group" aria-labelledby="br-pick"></div>
+      <p class="br-note" data-t="br.note">برايل العربي يُقرأ من اليسار إلى اليمين، مثل برايل الإنجليزي.</p>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--yellow);--to:var(--cream)" aria-hidden="true"></svg>
+
+<!-- Collaborations -->
+<section class="room t-cream" id="collaborations" aria-labelledby="co-h">
+  <div class="wrap">
+    <h2 id="co-h" class="h2 words" data-t="co.h">التعاونات</h2>
+    <dl class="stats">
+      <div data-reveal style="--i:0"><dd class="count" data-to="5">5</dd><dt data-t="co.artists">فنان</dt></div>
+      <div data-reveal style="--i:1"><dd class="count" data-to="8">8</dd><dt data-t="co.partners">شراكات</dt></div>
+      <div data-reveal style="--i:2"><dd class="count" data-to="15">15</dd><dt data-t="co.shows">معرض</dt></div>
+    </dl>
+  </div>
+  <div class="marquee">
+    <ul class="marq-group" data-ta="aria-label:co.logos" aria-label="الجهات الشريكة">
+      <li><img class="keep" src="img/partner-misk.png" data-ta="alt:co.misk" alt="مسك — مؤسسة محمد بن سلمان"></li>
+      <li><img class="keep" src="img/partner-jax.png" data-ta="alt:co.jax" alt="حي جاكس"></li>
+      <li><img class="keep" src="img/partner-ithra.png" data-ta="alt:co.ithra" alt="إثراء"></li>
+      <li><img class="keep" src="img/partner-moc.png" data-ta="alt:co.moc" alt="وزارة الثقافة"></li>
+      <li><img class="keep" src="img/partner-diriyah.png" data-ta="alt:co.dbf" alt="مؤسسة بينالي الدرعية"></li>
+    </ul>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--cream);--to:var(--ink)" aria-hidden="true"></svg>
+
+<!-- Process -->
+<section class="room t-ink" id="process" aria-labelledby="pr-h">
+  <div class="wrap">
+    <h2 id="pr-h" class="h2 proc-title words" data-t="pr.h">آلية العمل</h2>
+    <ol class="proc">
+      <li data-reveal><span class="num" aria-hidden="true">١</span><h3 data-t="pr.1">التواصل</h3><p data-t="pr.1p">مناقشة تفاصيل المشروع ومتطلباته، وتحديد الميزانية المناسبة، بالإضافة إلى الاتفاق على نطاق العمل والجدول الزمني ومواعيد التسليم.</p></li>
+      <li data-reveal><span class="num" aria-hidden="true">٢</span><h3 data-t="pr.2">التحليل البصري والتفكيك</h3><p data-t="pr.2p">تحليل اللوحة أو العمل الفني الأصلي لتحديد العناصر وتصنيفها إلى طبقات يمكن إبرازها لمسيًا.</p></li>
+      <li data-reveal><span class="num" aria-hidden="true">٣</span><h3 data-t="pr.3">التصميم الرقمي</h3><p data-t="pr.3p">تصميم العمل الفني في بيئة رقمية لتحديد المجسمات البارزة وفق القواعد المحددة، ودمج نصوص لغة برايل (Braille).</p></li>
+      <li data-reveal><span class="num" aria-hidden="true">٤</span><h3 data-t="pr.4">الدمج الصوتي والموشن</h3><p data-t="pr.4p">ربط كل جزء أو طبقة لمسية في المجسم بمؤثرات صوتية تناسب العمل لضمان تكامل التجربة الحسية.</p></li>
+      <li data-reveal><span class="num" aria-hidden="true">٥</span><h3 data-t="pr.5">الإنتاج</h3><p data-t="pr.5p">تنفيذ المجسمات باستخدام تقنيات التصنيع (كالطباعة ثلاثية الأبعاد أو النقوش البارزة) مع اختيار خامات ملمس آمنة ومريحة للمستخدم.</p></li>
+      <li data-reveal><span class="num" aria-hidden="true">٦</span><h3 data-t="pr.6">التسليم</h3><p data-t="pr.6p">مراجعة القطع مع الجهة المستفيدة (المتحف، المعرض، أو الفنان) للتأكد من مطابقتها لمعايير الجودة، وتسليم المشروع جاهزًا للجمهور.</p></li>
+    </ol>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--ink);--to:var(--blue)" aria-hidden="true"></svg>
+
+<!-- Vision -->
+<section class="room t-blue" id="vision">
+  <div class="wrap">
+    <div class="grid vis-grid">
+      <div class="vis-art" aria-hidden="true"><canvas class="orbits"></canvas></div>
+      <div class="vis-copy">
+        <div data-reveal><h2 class="h3" data-t="vi.vh">رؤيتنا:</h2><p class="lead" data-t="vi.v">أن نكون المنصة الريادية السعودية الأولى في تمكين المعارض من تقديم تجارب حسية غامرة متاحة بالكامل للمكفوفين.</p></div>
+        <div data-reveal><h2 class="h3" data-t="vi.mh">رسالتنا:</h2><p class="lead" data-t="vi.m">تحويل المعارض وصالات العرض الصامتة إلى بيئات فنية تفاعلية تجمع بين اللمس والصوت، لنجعل الفن متعة تلامس حواس المكفوفين.</p></div>
+      </div>
+    </div>
+    <div class="vals">
+      <article class="val" data-reveal>
+        <span class="val-n" aria-hidden="true" data-t="vi.n1">٠١</span>
+        <h2 class="val-h" data-t="vi.value">قيمتنا</h2>
+        <p class="lead" data-t="vi.valuep">تقديم طرق حسية وصوتية جديدة لعرض الفن، ليصبح الفن متاحًا وملموسًا للمكفوفين.</p>
+      </article>
+      <article class="val" data-reveal style="--i:1">
+        <span class="val-n" aria-hidden="true" data-t="vi.n2">٠٢</span>
+        <h2 class="val-h" data-t="vi.aim">ما الذي نطمح له</h2>
+        <p class="lead" data-t="vi.aimp">نطمح بأن يكون الفن في كل معرض متاحًا للمكفوفين بطرق حسية وصوتية سهلة، بحيث يستطيع أي شخص كفيف تخيّل العمل الفني والاستمتاع به بكل سهولة.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--blue);--to:var(--ink)" aria-hidden="true"></svg>
+
+<!-- Stories / blog -->
+<section class="t-ink" id="stories" aria-labelledby="bl-h">
+  <div class="stories-hero">
+    <canvas class="ink-flow" aria-hidden="true"></canvas>
+    <div>
+      <h2 id="bl-h" class="words" data-t="bl.h">الفن لذوي الإعاقة البصرية</h2>
+      <p class="lead mt-s" data-reveal data-t="bl.s">حين تغيب الرؤية، تفتح الحواس أبوابًا أخرى للفن</p>
+    </div>
+  </div>
+  <div class="room" style="padding-block-start:clamp(3rem,6vw,5rem)">
+    <div class="wrap grid stories-body">
+      <div class="stories-a">
+        <h2 class="h2 words" data-t="bl.st">قصص ملهمة</h2>
+        <p class="lead mt-s" data-reveal data-t="bl.st2">خلف كل تجربة قصة تستحق أن تُسمع.</p>
+        <p class="mt-m measure" data-reveal data-t="bl.p">نشارك قصص وتجارب ملهمة لأشخاص من ذوي الإعاقة البصرية، لنعطي مساحة لأصواتهم وتجاربهم وإبداعاتهم، ونُلهم الآخرين بما يستطيعون تحقيقه.</p>
+      </div>
+      <div class="stories-b" data-reveal>
+        <h3 class="h3" data-t="bl.share">شارك قصتك</h3>
+        <p data-t="bl.share2">قصتك قد تكون مصدر إلهام لشخص آخر</p>
+        <label class="drop">
+          <input type="file" accept=".txt,.pdf,.doc,.docx,audio/*,image/*" data-ta="aria-label:bl.drop" aria-label="ارفع قصتك">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 15V4M7.5 8.5 12 4l4.5 4.5M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg>
+          <b data-t="bl.drop">ارفع قصتك</b>
+          <span data-t="bl.drop2">نص أو صوت أو صورة. اضغط لاختيار ملف، أو أسقطه هنا.</span>
+          <span class="fname" aria-live="polite"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--ink);--to:var(--cream)" aria-hidden="true"></svg>
+
+<!-- Register -->
+<section class="room t-cream" id="register" aria-labelledby="rg-h">
+  <div class="wrap grid">
+    <div class="reg-head">
+      <h2 id="rg-h" class="h2 words" data-t="rg.h">للتسجيل</h2>
+      <p class="lead mt-s" data-reveal data-t="rg.p">شاركنا مساحتك الفنية أو أعمالك لابتكار محطات لمسية وصوتية تفاعلية للكفيف.</p>
+    </div>
+    <div class="reg-form">
+      <div class="seg" role="group" data-ta="aria-label:rg.type" aria-label="أسجل بصفتي">
+        <button class="btn ghost" type="button" data-form="reg-artist" aria-pressed="true" data-t="rg.artist">فنان</button>
+        <button class="btn ghost" type="button" data-form="reg-company" aria-pressed="false" data-t="rg.company">شركة</button>
+      </div>
+      <form class="form reg" id="reg-artist" novalidate>
+        <div class="f"><label for="ra-n"><span data-t="rg.name">الاسم</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="ra-n" name="name" required autocomplete="name"><p class="err"></p></div>
+        <div class="f"><label for="ra-p"><span data-t="rg.phone">رقم التواصل</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="ra-p" name="phone" type="tel" dir="ltr" required autocomplete="tel"><p class="err"></p></div>
+        <div class="f full"><label for="ra-e"><span data-t="rg.email">الإيميل</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="ra-e" name="email" type="email" dir="ltr" required autocomplete="email"><p class="err"></p></div>
+        <div class="f full"><label for="ra-d"><span data-t="rg.desc">وصف العمل</span> <span class="req" data-t="req">(مطلوب)</span></label><textarea id="ra-d" name="description" required></textarea><p class="err"></p></div>
+        <div class="form-actions"><button class="btn" type="submit"><span class="pip"></span><span data-t="rg.send">أرسل</span></button></div>
+      </form>
+      <form class="form reg" id="reg-company" novalidate hidden>
+        <div class="f"><label for="rc-n"><span data-t="rg.cname">اسم الشركة</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="rc-n" name="company" required autocomplete="organization"><p class="err"></p></div>
+        <div class="f"><label for="rc-p"><span data-t="rg.phone">رقم التواصل</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="rc-p" name="phone" type="tel" dir="ltr" required autocomplete="tel"><p class="err"></p></div>
+        <div class="f"><label for="rc-l"><span data-t="rg.loc">الموقع</span></label><input id="rc-l" name="location"><p class="err"></p></div>
+        <div class="f"><label for="rc-e"><span data-t="rg.email">الإيميل</span> <span class="req" data-t="req">(مطلوب)</span></label><input id="rc-e" name="email" type="email" dir="ltr" required autocomplete="email"><p class="err"></p></div>
+        <fieldset class="f full"><legend><span data-t="rg.service">نوع الخدمة</span> <span class="req" data-t="req">(مطلوب)</span></legend>
+          <div class="pills">
+            <label class="pill"><input type="radio" name="service" value="consultation" required><span data-t="rg.s1">استشارة فنية</span></label>
+            <label class="pill"><input type="radio" name="service" value="partnership"><span data-t="rg.s2">شراكة استراتيجية</span></label>
+          </div><p class="err"></p></fieldset>
+        <div class="f full"><label for="rc-c"><span data-t="rg.count">عدد الأعمال</span></label><input id="rc-c" name="works" inputmode="numeric"><p class="err"></p></div>
+        <div class="f full"><label for="rc-d"><span data-t="rg.desc">وصف العمل</span> <span class="req" data-t="req">(مطلوب)</span></label><textarea id="rc-d" name="description" required></textarea><p class="err"></p></div>
+        <div class="form-actions"><button class="btn" type="submit"><span class="pip"></span><span data-t="rg.send">أرسل</span></button></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<svg class="seam" style="--from:var(--cream);--to:var(--yellow)" aria-hidden="true"></svg>
+
+<!-- Join band -->
+<section class="room t-yellow" aria-labelledby="jn-h">
+  <div class="wrap join-band">
+    <h2 id="jn-h" class="words" data-t="jn.h">كن اليد التي تفتح بابًا
+جديدًا للفن</h2>
+    <a class="btn" href="volunteer.html"><span class="pip"></span><span data-t="jn.b">انضم للفريق</span></a>
+  </div>
+</section>
+<svg class="seam" style="--from:var(--yellow);--to:var(--ink)" aria-hidden="true"></svg>
+</main>
+
+<footer class="ftr t-ink">
+  <div class="ftr-in">
+    <img class="ftr-logo keep" src="img/logo-cream.png" alt="" width="900" height="343">
+    <nav class="ftr-links" data-ta="aria-label:n.footer" aria-label="روابط التذييل">
+      <a href="#see" data-t="n.home">الرئيسية</a><a href="#about" data-t="n.about">من نحن</a><a href="#technologies" data-t="n.tech">تقنياتنا</a>
+    </nav>
+    <div class="ftr-social" role="group" data-ta="aria-label:f.social" aria-label="قنوات جس">
+      <a href="mailto:jassstudio816@gmail.com" data-ta="aria-label:f.mail" aria-label="راسلنا على البريد الإلكتروني"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="1"/><path d="m3 7 9 6 9-6"/></svg></a>
+      <a href="https://www.instagram.com/studio.jass.sa/" target="_blank" rel="noopener" data-ta="aria-label:f.ig" aria-label="حساب جس على إنستقرام (يفتح في نافذة جديدة)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r=".6" fill="currentColor"/></svg></a>
+    </div>
+    <small data-t="f.rights">© جس ٢٠٢٦ - جميع الحقوق محفوظة</small>
+    <span class="made"><img class="keep" src="img/partner-made.png" data-ta="alt:f.made" alt="صناعة سعودية" loading="lazy"></span>
+  </div>
+</footer>
+
+<script src="js/i18n.js"></script>
+<script src="js/art-data.js"></script>
+<script src="js/jass.js?v=4"></script>
+</body>
+</html>
